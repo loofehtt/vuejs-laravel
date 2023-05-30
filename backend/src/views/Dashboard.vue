@@ -1,11 +1,9 @@
 <template>
-    <h1>dashboard</h1>
+    <div>
+        <h1>test</h1>
+    </div>
 </template>
 
-<script>
-export default {
-    name: "Dashboard",
-};
-</script>
+<script setup></script>
 
-<style scoped></style>
+<style lang="scss" scoped></style>

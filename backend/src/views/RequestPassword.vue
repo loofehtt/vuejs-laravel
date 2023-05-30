@@ -31,10 +31,10 @@
         <p class="mt-10 text-center text-sm text-gray-500">
             Remembered it?
             {{ " " }}
-            <a
-                href="login"
+            <router-link
+                :to="{ name: 'login' }"
                 class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
-                >Sign in</a
+                >Sign in</router-link
             >
         </p>
     </GuestLayout>
@@ -42,6 +42,7 @@
 
 <script setup>
 import GuestLayout from "../components/GuestLayout.vue";
+import router from "../router";
 </script>
 
 <style scoped></style>
