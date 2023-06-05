@@ -55,8 +55,8 @@
             <router-link
                 :to="{ name: 'login' }"
                 class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
-                >Sign in</router-link
-            >
+                >Sign in
+            </router-link>
         </p>
     </GuestLayout>
 </template>
