@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+// use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -23,11 +24,13 @@ class AuthController extends Controller
             ], 422);
         }
 
+        // Data type definition for $user
+        /** @var \App\Models\User $user **/
         $user = Auth::user();
         $token = $user->createToken('main')->plainTextToken;
 
         return response([
-            'user' => $user,
+            'user' => $user ,
             'token' => $token
         ]);
     }
